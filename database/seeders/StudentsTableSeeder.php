@@ -1,6 +1,8 @@
 <?php
 
-use App\Student;
+namespace Database\Seeders;
+
+use App\Models\Student;
 use Illuminate\Database\Seeder;
 
 /**
@@ -15,6 +17,6 @@ class StudentsTableSeeder extends Seeder
      */
     public function run(): void
     {
-        factory(Student::class, 10)->create();
+        Student::factory()->times(10)->create();
     }
 }

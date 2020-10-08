@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\View\View;
 use App\Services\AttendanceService;
 use App\Http\Controllers\Controller;
-use App\Student;
+use App\Models\Student;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Contracts\View\Factory;

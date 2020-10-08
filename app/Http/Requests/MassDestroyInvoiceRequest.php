@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\Invoice;
+use App\Models\Invoice;
 use Gate;
 use Illuminate\Foundation\Http\FormRequest;
 use Symfony\Component\HttpFoundation\Response;

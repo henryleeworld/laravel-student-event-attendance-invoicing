@@ -2,8 +2,8 @@
 
 namespace App\Services;
 
-use App\Student;
-use App\Attendance;
+use App\Models\Student;
+use App\Models\Attendance;
 use Illuminate\Support\Facades\Route;
 
 /**

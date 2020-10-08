@@ -1,16 +1,31 @@
 <?php
 
-/** @var Factory $factory */
+namespace Database\Factories;
 
-use App\Student;
-use Faker\Generator as Faker;
-use Illuminate\Database\Eloquent\Factory;
+use App\Models\Student;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
-$factory->define(Student::class, function (Faker $faker) {
-    return [
-        'first_name' => $faker->firstName,
-        'last_name'  => $faker->lastName,
-        'email'      => $faker->unique()->safeEmail,
-        'billing_address' => $faker->address,
-    ];
-});
+class StudentFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = Student::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            'first_name'      => $this->faker->firstName,
+            'last_name'       => $this->faker->lastName,
+            'email'           => $this->faker->unique()->safeEmail,
+            'billing_address' => $this->faker->address,
+        ];
+    }
+}

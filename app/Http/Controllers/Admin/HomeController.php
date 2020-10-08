@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Attendance;
-use App\Invoice;
+use App\Models\Attendance;
+use App\Models\Invoice;
 
 class HomeController
 {

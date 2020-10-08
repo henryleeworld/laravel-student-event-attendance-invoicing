@@ -2,8 +2,8 @@
 
 namespace App\Console\Commands;
 
-use App\Invoice;
-use App\Student;
+use App\Models\Invoice;
+use App\Models\Student;
 use Illuminate\Console\Command;
 use LaravelDaily\Invoices\Classes\Party;
 use Illuminate\Support\Facades\Notification;

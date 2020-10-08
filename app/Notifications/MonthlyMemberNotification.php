@@ -2,8 +2,8 @@
 
 namespace App\Notifications;
 
-use App\Invoice;
-use App\Student;
+use App\Models\Invoice;
+use App\Models\Student;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Notifications\Messages\MailMessage;

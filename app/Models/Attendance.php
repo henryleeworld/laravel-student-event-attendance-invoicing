@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
-use \DateTimeInterface;
+use DateTimeInterface;
 
 class Attendance extends Model
 {
