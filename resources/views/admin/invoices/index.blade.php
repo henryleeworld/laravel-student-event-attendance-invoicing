@@ -103,7 +103,7 @@
                                         <input
                                             type="submit"
                                             class="btn btn-xs {{ ($invoice->paid_at) ? 'btn-warning' : 'btn-success'}}"
-                                            value="{{ ($invoice->paid_at) ? 'Mark as unpaid' : 'Mark as paid' }}"
+                                            value="{{ ($invoice->paid_at) ? __('Mark as unpaid') : __('Mark as paid') }}"
                                         >
                                     </form>
                                 @endcan

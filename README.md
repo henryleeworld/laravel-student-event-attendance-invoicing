@@ -1,6 +1,6 @@
-# Laravel 8 學生活動出勤發票
+# Laravel 10 學生活動出勤發票
 
-活動如有銷售門票，應依規定開立統一發票，只要開出統一發票，主辦單位對於營收狀況就有完整的紀錄，也能獲得正確的營業資訊，並提供有效的經營方針，杜絕弊端，擁有優良形象，更可以減少納稅的金額。Laravel 8 學生活動出勤發票主要是用 [QuickAdminPanel](https://quickadminpanel.com) 生成的，除了一些定制代碼，可依需求彈性改造的工具。
+活動如有銷售門票，應依規定開立統一發票，只要開出統一發票，主辦單位對於營收狀況就有完整的紀錄，也能獲得正確的營業資訊，並提供有效的經營方針，杜絕弊端，擁有優良形象，更可以減少納稅的金額。
 
 ## 使用方式
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
@@ -20,14 +20,22 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate --seed
 ```
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
+```sh
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/login` 來進行登入，預設的電子郵件和密碼分別為 __admin@admin.com__ 和 __password__ 。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/tbXuISv.png)
+![](https://i.imgur.com/VTz5k3o.png)
 > 學生指 12 歲（含）以上持學生證
 
-![](https://i.imgur.com/oWeMyHT.png)
+![](https://i.imgur.com/MdPQE3c.png)
 > 統一開立二聯式發票
